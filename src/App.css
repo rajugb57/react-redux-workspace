@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.leftContainer {
+  position: fixed;
+    width: 20%;
+    float: left;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+.rightContainer{
+  width: 80%;
+    float: right;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.leftContainerHeading{
+  background: cadetblue;
   color: white;
+  padding: 20px;
+  margin:0px;
+  position:absolute;
+  width: 100%;
+  top:0px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.ServicesContainer{
+  height : calc(100vh - 0px);
+  overflow-y: auto;
+  width:100%;
+}
+.serviceUL{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 65px;
+}
+.serviceUL li{
+  margin: 0px;
+  padding: 20px;
+  font-size:1.2em;
+}
+.serviceUL li:hover,.serviceUL li.selected{
+  background-color:lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.providerlist{
+  padding-top: 45px;
+  padding-bottom:20px;
+  display: flex;
+  flex-direction: row ;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+}
+.resetLink{
+  float: right;
+}
+.loading{
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+}
+.MuiTypography-h5{
+  font-size: 1.2em !important;
 }
